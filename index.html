@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+        <meta content="viewport" width=device-width initial-scale=1.1>
+        <link rel="stylesheet" href="Style-js.css">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Labrada:ital,wght@0,400;1,300;1,400;1,500&display=swap" rel="stylesheet">
+      <style>
+       @font-face{
+       font-family: android;
+       src: url("/storage/emulated/0/download/idroid/idroid italic.otf");
+       format: ("opentype");
+}
+       body, html{
+       background-color: #4021d9;
+       color: black;
+       fonte-family: serif 20pt Arial;
+       text-decoration: none;
+       text-align: center;
+}
+       #header{
+       
+       background-image: linear-gradient(to right, #3117eb, #6446f0, #9876f5, #cba6fa, #ffd6ff);
+       padding: 2px;
+       border-radius: 6px;
+}
+       #title{
+       font-family: android;
+       color: rgb(44,32,54);
+}
+       div#area{
+       display: inline-block;
+       font: normal 17pt Arial;
+       background: #7248f2;
+       color: black;
+       width: 100px;
+       height: 100px;
+       border-radius: 5px;
+       line-height: 200xp;
+       text-align: center;
+       box-shadow: 5px 5px 17px 1px darkblue;
+}      
+       div#area2{
+       display: inline-block;
+       font: normal 17pt Arial;
+       background: #7248f2;
+       color: black;
+       width: 100px;
+       height: 100px;
+       box-shadow: 5px 5px 17px 1px darkblue;
+       text-align: center;
+       border-radius: 5px;
+       
+}
+       div#area3{
+       display: inline-block;
+       font: normal 17pt Arial;
+       background: #7248f2;
+       color: black;
+       width: 100px;
+       height: 100px;
+       box-shadow: 5px 5px 17px 1px darkblue;
+       border-radius: 5px;
+}
+       mark{
+        Background: #2f18fc;
+} 
+      .botao{
+       background-color: #000088;
+       text-decoration: none;
+       border-radius: 5px;
+       padding: 6px;
+       color: #6f48fe;
+       margin-top: 10px;
+       font-size: 0.8em;
+       
+}      
+      div#conjuntoDiv{   
+      display: inline-block;
+}
+      div#botao1{
+      text-decoration: none;
+      margin: 10px;
+}
+      .link{
+       color: #000088;
+       text-decoration: none;
+       margin: 5px;
+}
+      #text{
+      text-align: justify;
+      text-indent: 20px;
+}
+      #logoPy{
+      width: 220px;
+      margin: auto;
+}
+      #rodaPe{
+      font-family: Dancing Script;
+      width: 270px;
+      margin: auto;
+      font-size: 1.3em;
+      margin-top: 13px;
+}
+      </style>
+        <title>Estudos JS</title>
+    </head>
+    <body>
+        <header id="header">
+        <h1 id="title">
+            Primeiros passos em programação
+        </h1>
+            <nav id="nav">
+                <a href="prompt.html" target="_blanck" class="link">Lista de alunos</a>
+                <a href="login.html" target="_blanck" class="link">Fazer login</a>
+                <a href="documentation.html" target="_blanck" class="link">Documentação</a>
+            </nav>
+            </header>
+        <main id="text">
+        <p>Esse é o fruto dos meus estudos na área da tecnologia
+        e estudando a linguagem de programação <mark><strong>Java script</strong> e <strong>python</strong>.</mark>   
+        Está página da web é meu primeiro programa é um
+        programa simples más foi eu mesmo que criei.</p>
+            </main>
+        <img src="/storage/emulated/0/download/logo-js 240.png" alt="logo do java script"><br>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" class="link">Link da documentação da linguagem javaScript</a>
+        <div><img id="logoPy" src="/storage/emulated/0/download/logo-python-redondo.png" alt="logo do python"><br></div>
+        <a href="https://docs.python.org/pt-br/3/" target="_blank" rel="external" class="link">Link da documentação da linguagem Python</a> 
+        <h1>Quer jogar um jogo?</h1>
+           <div id="conjuntoDiv"><div id="area">
+            Adivinhe a 
+            sua sorte
+              </div>
+          <div id="area2">
+            Adivinhe a
+            sua sorte
+            </div>
+       
+         <div id="area3">
+            Adivinhe a
+            sua sorte
+               </div></div>        
+        <button id="download-logo-js" class="botao" value="Enter"><a href ="/storage/emulated/0/download/logo-python-redondo.png" download ="logo-python-redondo.png" type="application/png" class="botao">Dowload do logo python</a></button>
+        <button id="download-logo-js" class="botao"><a href="/storage/emulated/0/download/logo-js 240.png" download="logo-js 240.png" class="botao" id="DLJS">Download logo JavaScript</a></button>
+        <button type="submit" id="botao1" class="botao"><a href="video-mp4.html" target="_self" rel="next" class="botao">Assista o vídeo reservado</a></button>
+        <footer id="rodaPe">Este site foi criado por Paulo Henrique da silva Reis‍ 👨‍💻</footer>
+        
+          </body>
+<script>
+    var area = window.document.getElementById("area")
+    
+    area.addEventListener('click', clicar)
+    area.addEventListener('mouseenter', entrar)
+    area.addEventListener('mouseout', sair)
+   window.alert("Bem vindo ao nosso site!")
+  var nome = window.prompt("Qual é seu nome?")
+   window.alert('Bem-vindo ao nosso site, ' +nome)
+    function clicar(){
+    area.innerText = "Se deu mal!"
+    area.style.background = "red"
+}
+    function entrar(){
+    area.innerText = "Clique aqui"
+    area.style.background = "#7248f2"
+}
+    function sair(){
+    area.innerText = "Adivinhe a sua sorte"
+    area.style.background = "#7248f2"
+}   
+    var area2 = window.document.getElementById("area2")
+    
+    area2.addEventListener('click',clicar2)
+    area2.addEventListener('mouseenter',entrar2)
+    area2.addEventListener('mouseout',sair2)
+    function clicar2(){
+    area2.innerText = "Seu dia será muito bom!"
+    area2.style.background = "yellow"
+}
+    function entrar2(){
+    area2.innerText = "Clique aqui"
+    area2.style.background = "#7248f2"
+}
+    function sair2(){
+    area2.innerText = "Adivinhe a sua sorte"
+    area2.style.background = "#7248f2"
+}
+    var area3 = window.document.getElementById("area3")
+    
+    area3.addEventListener('click',clicar3)
+    area3.addEventListener('mouseenter',entrar3)
+    area3.addEventListener('mouseout',sair3)
+    function clicar3(){
+    area3.innerText = "Seu dia vai ser difícil"
+    area3.style.background = "blue"
+}
+    function entrar3(){
+    area3.innerText = "Clique aqui"
+    area3.style.background = "#7248f2"
+}
+    function sair3(){
+    area3.innerText = "Adivinhe a sua sorte"
+    area3.style.background = "#7248f2"
+}
+</script>
